@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identifier</title>
+</head>
+<body>
+  <script>
+/*
+                                         Identifier
+->Identifier are those names that help us in naming the elements in JS
+Example : firstName
+          lastName
+          placeOfVisit
+
+                                         Rules
+1. First character of an identifier should be letters of the alphabet or an underscore(_) or dollar sign($)
+2. Subsequent characters can be letters of alphabets or digit or underscore(_) or dollar sign($)
+3. Identifiers are case-sensitive
+4. Reserved Keywords cannot be used as Identifiers
+
+
+                                         Types of Identifiers
+             Scope         Declaration                  Assignment
+1. let       Block         Redeclaration not allowed    Re-assignment allowed
+2. const     Block         Redeclaration not allowed    Re-assignment not allowed
+3. var       Function      Redeclaration allowed        Re-assignment allowed  
+
+
+                                          NOTE
+1. Use let keyword for identifier declartion that will change their value over time 
+   or when you don't need the variable outside the code block
+   or when you are looping, and looping variables are never used outside the block
+2. The const declaration can be used for string type identifiers
+   or simple number, functions or classes which does not need to be changed
+3. Use var keyword for variable declarations when you want them to have global scope in the program.      
+*/
+
+
+                                        // Code
+
+
+                                        //let
+let name = "Aditya";
+// let name = "ABCD";  
+//⬆️Redeclaration not allowed
+name = "Pranav"  //Re-assignment allowed
+document.write(`Welcome to JS course, Mr. ${name} <br>`);
+//output : Welcome to JS course, Mr. Pranav
+
+
+
+                                        //const
+const pi = 3.14;
+// const pi = 3.1415
+//⬆️Redeclaration not allowed
+//pi = 3.141592
+//⬆️Re-assignment not allowed
+document.write(`The value of Pi is : ${pi} <br>`);
+//output : The value of Pi is : 3.14  
+
+
+
+                                        //var
+var job = "Developer";
+var job = "Data Analyst";  //Redeclaration allowed
+job = "SDE-1";             //Re-assignment allowed
+document.write(`The value of job is : ${job} <br>`);
+//output : The value of job is : SDE-1
+
+
+
+  </script>
+</body>
+</html>
