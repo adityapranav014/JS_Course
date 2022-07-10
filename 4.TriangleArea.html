@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TriangleArea</title>
+</head>
+<body>
+  <script>
+    //Area of Right Angled Triangle
+     var base = prompt("Please enter the base value");
+     var height = prompt("Please enter the height value");
+     var area = (base*height)/2;
+     document.write(`<h2>The Area of triangle having Base value : ${base} and Height value : ${height} is ${area}</h2>`)
+
+     //Area of Regular Triangle using Heron's Formula
+     var a = prompt("Please enter the 1st side value");
+     var b = prompt("Please enter the 2nd side value");
+     var c = prompt("Please enter the 3rd side value");
+     var s = (a+b+c)/2;
+     var temp = s*(s-a)*(s-b)*(s-c);
+     var areaR = Math.sqrt(temp);
+     document.write(`<h2>The Area of triangle having side value : ${a}, ${b}, and ${c} is ${areaR}</h2>`) 
+
+
+  </script>
+</body>
+</html>
